@@ -340,7 +340,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Company Timeline */}
+      {/* Company Timeline 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
@@ -394,7 +394,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Our Culture */}
       <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-100 relative overflow-hidden">
