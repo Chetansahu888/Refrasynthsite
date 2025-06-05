@@ -206,96 +206,53 @@ export default function ProductsServicesPage() {
             <p className="text-xl text-gray-600">High-grade products with innovative design solutions</p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-green-100 hover:border-green-300 group">
-                <CardHeader>
-                  <Shield className="h-12 w-12 text-green-600 mb-4 transform group-hover:scale-110 transition-transform duration-300" />
-                  <CardTitle className="text-2xl">Refractory Products</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {[
-                    {
-                      title: "Castable Insulation Materials",
-                      desc: "High-grade refractory castables designed for furnaces used by steel manufacturers operating through the Direct Reduced Iron (DRI) route.",
-                    },
-                    {
-                      title: "High-Grade Products",
-                      desc: "Products which, in addition to their refractoriness, also include innovative design solutions tailored to specific applications.",
-                    },
-                    {
-                      title: "Individually Adapted Systems",
-                      desc: "System packages individually adapted to solve any problems with materials specifically optimized for special metallurgical requirements.",
-                    },
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      className="flex items-start space-x-3"
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                    >
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold">{item.title}</h4>
-                        <p className="text-sm text-gray-600">{item.desc}</p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-green-100 hover:border-green-300 group">
-                <CardHeader>
-                  <Factory className="h-12 w-12 text-green-600 mb-4 transform group-hover:scale-110 transition-transform duration-300" />
-                  <CardTitle className="text-2xl">SS Products</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {[
-                    {
-                      title: "Specialized Stainless Steel Products",
-                      desc: "Advanced stainless steel refractory products designed for high-temperature applications and corrosive environments.",
-                    },
-                    {
-                      title: "Innovative Technology",
-                      desc: "Products manufactured using innovative technology with the latest safety standards and diligence in quality control.",
-                    },
-                    {
-                      title: "Optimized Lining Concepts",
-                      desc: "Lining concepts specifically adapted to the requirements of the production process for maximum efficiency.",
-                    },
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      className="flex items-start space-x-3"
-                      initial={{ opacity: 0, x: 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                    >
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold">{item.title}</h4>
-                        <p className="text-sm text-gray-600">{item.desc}</p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </CardContent>
-              </Card>
-            </motion.div>
+          <div className="flex justify-center">
+            <div className="max-w-2xl w-full">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-green-100 hover:border-green-300 group">
+                  <CardHeader>
+                    <Shield className="h-12 w-12 text-green-600 mb-4 transform group-hover:scale-110 transition-transform duration-300" />
+                    <CardTitle className="text-2xl">Refractory Products</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {[
+                      {
+                        title: "Castable Insulation Materials",
+                        desc: "High-grade refractory castables designed for furnaces used by steel manufacturers operating through the Direct Reduced Iron (DRI) route.",
+                      },
+                      {
+                        title: "High-Grade Products",
+                        desc: "Products which, in addition to their refractoriness, also include innovative design solutions tailored to specific applications.",
+                      },
+                      {
+                        title: "Individually Adapted Systems",
+                        desc: "System packages individually adapted to solve any problems with materials specifically optimized for special metallurgical requirements.",
+                      },
+                    ].map((item, index) => (
+                      <motion.div
+                        key={index}
+                        className="flex items-start space-x-3"
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: index * 0.1 }}
+                      >
+                        <CheckCircle className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold">{item.title}</h4>
+                          <p className="text-sm text-gray-600">{item.desc}</p>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

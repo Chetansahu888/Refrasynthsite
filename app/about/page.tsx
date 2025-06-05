@@ -467,10 +467,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
             {[
-              { initials: "PP", name: "Pradeep Passary", title: "Managing Director" },
-              { initials: "KP", name: "Kavit Passary", title: "Managing Director" },
-              { initials: "BP", name: "Bitthal Passary", title: "Managing Director" },
-              { initials: "JP", name: "Jaidhish Passary", title: "Managing Director" },
+              { initials: "PP", name: "Pradeep Passary", title: "Director" },
+              { initials: "KP", name: "Kavit Passary", title: "Director" },
+              { initials: "BP", name: "Bitthal Passary", title: "Director" },
+              { initials: "JP", name: "Jaidhish Passary", title: "Director" },
             ].map((member, i) => (
               <motion.div key={i} variants={scaleIn}>
                 <Card className="text-center p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-green-100 hover:border-green-300 group">

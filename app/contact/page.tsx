@@ -192,13 +192,13 @@ export default function ContactPage() {
                 viewport={{ once: true }}
               >
                 {[
-                  { icon: Mail, title: "Email Address", desc: "marketing@pasmin.com" },
+                  { icon: Mail, title: "Email Address", desc: "refrasynthminerals@gmail.com" },
                   {
                     icon: Phone,
                     title: "Phone Numbers",
-                    desc: "Phone No. 1: Available on request\nPhone No. 2: Available on request",
+                    desc: "+917222980807",
                   },
-                  { icon: MapPin, title: "Find an Office", desc: "Multiple locations across India" },
+                  { icon: MapPin, title: "Find an Office", desc: "M/s REFRASYNTH MINERALS INDIA PVT LTD. \nWORKS: - KHASRA NO. 297/3,297/5,297/7,297/8, \nVILL AKOLI, NEAR TARPONGI TOLL PLAZA.\n P.O.: DEVRI, RAIPUR, CHATTISGARH \n PINCODE: 493221 \nGST NO – 22AAJCR9122Q1ZW" },
                 ].map((contact, index) => (
                   <motion.div key={index} variants={scaleIn} className="flex items-center space-x-4 group">
                     <div className="bg-green-100 p-3 rounded-lg group-hover:bg-green-200 transition-colors duration-300">
@@ -290,65 +290,6 @@ export default function ContactPage() {
               </Card>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Office Locations */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <Badge className="mb-4">Our Presence</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Factory Outlets & Offices</h2>
-            <p className="text-xl text-gray-600">Discover our sites - Strategically located across India</p>
-          </motion.div>
-
-          <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            {[
-              {
-                title: "Head Office",
-                company: "Passary Minerals Pvt. Ltd.",
-                address: "Kachery Road, Near Axis Bank\nRourkela 769 012\nDist. Sundergarh, Odisha. BHARAT",
-              },
-              {
-                title: "Corporate Office",
-                company: "Passary Minerals Madhya Pvt. Ltd.",
-                address: "B-602, Babylon Tower, VIP Road\nRaipur - 492 001, CG. BHARAT",
-              },
-              {
-                title: "Odisha Works",
-                company: "Passary Minerals Pvt. Ltd.",
-                address: "Vill. Bijabahal, PO. Kumjharia\nVia. Kuarmunda, Dist. Sundargarh\n770 039 Odisha. BHARAT",
-              },
-              {
-                title: "Raipur Works",
-                company: "Passary Minerals Madhya Pvt. Ltd.",
-                address: "61/39, 61/41, Urkura Road\nBirgaon Raipur 493 221\nCG. BHARAT",
-              },
-            ].map((office, index) => (
-              <motion.div key={index} variants={scaleIn}>
-                <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-green-100 hover:border-green-300 group h-full">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <Building className="h-8 w-8 text-green-600 transform group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="font-bold text-lg">{office.title}</h3>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-2 font-medium">{office.company}</p>
-                  <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">{office.address}</p>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </section>
 

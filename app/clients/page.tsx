@@ -470,17 +470,14 @@ export default function ClientsPage() {
           >
             {[
               {
-                number: "54",
                 title: "Potential Clients in Raipur",
                 desc: "Strong market presence in the Raipur industrial corridor with significant growth opportunities",
               },
               {
-                number: "125",
                 title: "Crores Annual Turnover",
                 desc: "Demonstrating strong client relationships and successful project delivery across industries",
               },
               {
-                number: "3-5",
                 title: "Years Maintenance Cycle",
                 desc: "Long-term client relationships with extended maintenance cycles demonstrating product reliability",
               },
