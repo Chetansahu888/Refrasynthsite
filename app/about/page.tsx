@@ -506,24 +506,32 @@ export default function AboutPage() {
           </motion.div>
 
           <motion.div
-            className="grid md:grid-cols-3 gap-8"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
+            className="flex justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            {[1, 2, 3].map((i) => (
-              <motion.div key={i} variants={scaleIn}>
-                <Card className="text-center p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-green-100 hover:border-green-300 group">
-                  <Award className="h-16 w-16 text-green-600 mx-auto mb-4 transform group-hover:scale-110 transition-transform duration-300" />
-                  <h3 className="text-xl font-bold mb-3">Performance Certificate</h3>
-                  <p className="text-gray-600">
-                    Certified for excellence in refractory solutions and service delivery, meeting international quality
-                    standards.
-                  </p>
-                </Card>
-              </motion.div>
-            ))}
+            <Card className="text-center p-12 max-w-2xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-green-200 hover:border-green-400 group bg-white/80 backdrop-blur-sm">
+              <div className="relative">
+                <div className="absolute -top-6 -left-6 w-12 h-12 bg-green-100 rounded-full opacity-50 animate-pulse"></div>
+                <div className="absolute -bottom-6 -right-6 w-8 h-8 bg-emerald-100 rounded-full opacity-50 animate-pulse animation-delay-1000"></div>
+
+                <Award className="h-24 w-24 text-green-600 mx-auto mb-8 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+
+                <h3 className="text-3xl font-bold mb-6 text-gray-900 group-hover:text-green-700 transition-colors duration-300">
+                  Performance Certificate
+                </h3>
+
+                <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto mb-6 rounded-full"></div>
+
+                <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                  Certified for excellence in refractory solutions and service delivery, meeting international quality
+                  standards. This certification validates our commitment to providing superior products and services
+                  that exceed industry benchmarks.
+                </p>
+              </div>
+            </Card>
           </motion.div>
         </div>
       </section>
@@ -575,11 +583,11 @@ export default function AboutPage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>marketing@pasmin.com</span>
+                  <span>refrasynthminerals@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>Multiple locations across India</span>
+                  <span>M/s REFRASYNTH MINERALS INDIA PVT LTD.</span>
                 </div>
               </div>
               <div className="mt-4">

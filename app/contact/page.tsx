@@ -527,11 +527,11 @@ export default function ContactPage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>marketing@pasmin.com</span>
+                  <span>refrasynthminerals@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>Multiple locations across India</span>
+                  <span>M/s REFRASYNTH MINERALS INDIA PVT LTD.</span>
                 </div>
               </div>
               <div className="mt-4">
