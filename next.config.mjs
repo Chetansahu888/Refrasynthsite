@@ -1,14 +1,14 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
-  output: 'export',
+  output: 'export', // Tells Next.js to generate a static site (in "out" folder)
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Optional: skip eslint errors during build
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true, // Optional: skip TypeScript errors during build
   },
   images: {
-    unoptimized: true
+    unoptimized: true, // Required if using <Image /> in static export
   }
 };
 
